@@ -182,6 +182,26 @@ def occ_liste(liste, car) :
 
 # -----------------------------------------------------------------------------
 
+#  Exercice 14
+
+def stat_chiffres(nbre) : 
+    nbr_str = str(abs(nbre))
+    dictionaire = {}
+
+    for chifre in nbr_str :
+        if chifre in dictionaire :
+            dictionaire[chifre] += 1
+        else :
+            dictionaire[chifre] = 1
+    
+    return dictionaire
+
+# -----------------------------------------------------------------------------
+
+# Exercice 15 
+
+
+
 if __name__ == "__main__":
     # Example 1
     # l = [5, 8, 9, 47, 36, 123, 5, 3, 1]
@@ -257,4 +277,15 @@ if __name__ == "__main__":
     # ptit_dej = ['biscottes', 'chocolat', 'cafe', 'tartines', 'the']
     # print(occ_liste(ptit_dej, 'c')) # retournera [1, 2, 1, 0, 0]
 
+    # ------------------------------------------
+
+    # Example 14 
+    # nbre = 452475
+    # print(stat_chiffres(nbre)) # retournera {4: 2, 5: 2, 2: 1, 7: 1}
+    # nbre = 11122544456666
+    # print(stat_chiffres(nbre)) # retournera {1: 3, 2: 2, 5: 2, 4: 3, 6: 4}
+    
+    # ------------------------------------------
+    
+    # Example 15
     ...
