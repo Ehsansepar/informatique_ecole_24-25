@@ -1,4 +1,5 @@
 # --- Importation des modules python ---
+from math import sqrt
 
 
 # --- Définition des fonctions ---
@@ -223,6 +224,11 @@ def diff_list(liste1, liste2) :
 
 # Exercice 17 
 
+def distance(xa, ya, xb, yb) :
+    #  d = √(x2−x1)2+(y2−y1)2. formule distance
+    distance = sqrt(( xb - xa ) ** 2  +  ( yb - ya ) ** 2)
+
+    return distance
 
 
 if __name__ == "__main__":
@@ -321,4 +327,14 @@ if __name__ == "__main__":
     # s1 = [4, 5, 8, 89, 2, 14]
     # s2 = [2, 3, 8, 65, 45, 6]
     # print(diff_list(s1, s2)) # retournera [2, 2, 0, 24, -43, 8]
+    
+    # ------------------------------------------
+
+    # Example 17 
+
+    xa, ya = 1, 2
+    xb, yb = 4, 6
+    print(distance(xa,ya,xb,yb))
+    
     ...
+    
