@@ -205,6 +205,8 @@ def fibonacci(n) :
 
     for i in range(2, n) :
         next_fib = liste[-1] + liste[-2]
+        liste.append(next_fib)
+    return liste
         
 
 
@@ -294,4 +296,6 @@ if __name__ == "__main__":
     # ------------------------------------------
     
     # Example 15
+    
+    # print(fibonacci(9)) # retournera [0, 1, 1, 2, 3, 5, 8, 13, 21]
     ...
