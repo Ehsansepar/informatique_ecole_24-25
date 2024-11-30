@@ -200,6 +200,12 @@ def stat_chiffres(nbre) :
 
 # Exercice 15 
 
+def fibonacci(n) : 
+    liste = [0, 1]
+
+    for i in range(2, n) :
+        next_fib = liste[-1] + liste[-2]
+        
 
 
 if __name__ == "__main__":
