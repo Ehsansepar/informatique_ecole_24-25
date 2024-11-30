@@ -208,6 +208,21 @@ def fibonacci(n) :
         liste.append(next_fib)
     return liste
         
+# -----------------------------------------------------------------------------
+
+# Exercice 16
+
+def diff_list(liste1, liste2) : 
+    lst = []
+    for i in range(len(liste1)) :
+            new = liste1[i] - liste2[i] 
+            lst.append(new)
+    return lst
+
+# -----------------------------------------------------------------------------
+
+# Exercice 17 
+
 
 
 if __name__ == "__main__":
@@ -298,4 +313,12 @@ if __name__ == "__main__":
     # Example 15
     
     # print(fibonacci(9)) # retournera [0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+    # ------------------------------------------
+
+    # Example 16
+
+    # s1 = [4, 5, 8, 89, 2, 14]
+    # s2 = [2, 3, 8, 65, 45, 6]
+    # print(diff_list(s1, s2)) # retournera [2, 2, 0, 24, -43, 8]
     ...
