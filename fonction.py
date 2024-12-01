@@ -376,4 +376,4 @@ if __name__ == "__main__":
     # Example 20
     # print(npremier(7)) # retournera 17
     ...
-    
+    # end weekend
