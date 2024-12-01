@@ -1,14 +1,24 @@
-# 19.Écrire une fonction premier(n) ayant en paramètre un entier et qui renvoie un
-# booléen True si l'entier est premier et False sinon. 
 from math import sqrt
 def premier(n):
-    if n <= 1:
+    if n < 2:
         return False
-    for i in range(2, int(sqrt( n )) + 1):
-        if n % i == 0:
+    for i in range(2, int(sqrt(n)) + 1):  # On vérifie jusqu'à sqrt(n), +1 pour inclure 5
+        if n % i == 0:  # Si n est divisible par i, ce n'est pas premier
             return False
-        return True
-    
-print(premier(10))
+    return True  # Si aucun diviseur n'est trouvé, alors n est premier
 
-# print(int(2**0.5) + 1)
+# -----------------------------------------------------------------------------
+
+# Exercice 20
+
+def npremier(n) :
+    compteur = 0
+    i = 2
+    while True : 
+        if premier(i) :
+            compteur += 1
+        if compteur == n :
+            return i
+        i += 1
+
+print(npremier(10))

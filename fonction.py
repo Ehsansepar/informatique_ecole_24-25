@@ -232,7 +232,7 @@ def distance(xa, ya, xb, yb) :
 
 # -----------------------------------------------------------------------------
 
-# Exercice 18
+# Exercice 19
 
 import math
 
@@ -246,8 +246,17 @@ def premier(n):
 
 # -----------------------------------------------------------------------------
 
-# Exercice 19
+# Exercice 20
 
+def npremier(n) :
+    compteur = 0
+    i = 2
+    while True : 
+        if premier(i) : # on verifie que i est premier donc on utlise la fonction premier qu'on a créé 
+            compteur += 1
+        if compteur == n :
+            return i
+        i += 1
 
 
 if __name__ == "__main__":
@@ -268,7 +277,7 @@ if __name__ == "__main__":
 
     # ------------------------------------------
 
-    # Example 4 
+    # Example 4
     # serie = [5, 8, 2, 1, 9, 3, 6, 7]
     # print(indexMax(serie)) # retournera 4
 
@@ -357,9 +366,14 @@ if __name__ == "__main__":
     
     # ------------------------------------------
 
-    # Example 18 
+    # Example 19
 
     # print(premier(10)) # retournera False
     # print(premier(7)) # retournera True
+
+    # ------------------------------------------
+
+    # Example 20
+    # print(npremier(7)) # retournera 17
     ...
     
