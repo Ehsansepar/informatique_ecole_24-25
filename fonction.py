@@ -234,6 +234,21 @@ def distance(xa, ya, xb, yb) :
 
 # Exercice 18
 
+import math
+
+def premier(n):
+    if n < 2:
+        return False
+    for i in range(2, int(math.sqrt(n)) + 1):  # On vérifie jusqu'à sqrt(n), +1 pour inclure 5
+        if n % i == 0:  # Si n est divisible par i, ce n'est pas premier
+            return False
+    return True  # Si aucun diviseur n'est trouvé, alors n est premier
+
+# -----------------------------------------------------------------------------
+
+# Exercice 19
+
+
 
 if __name__ == "__main__":
     # Example 1
@@ -336,9 +351,15 @@ if __name__ == "__main__":
 
     # Example 17 
 
-    xa, ya = 1, 2
-    xb, yb = 4, 6
-    print(distance(xa,ya,xb,yb))
+    # xa, ya = 1, 2
+    # xb, yb = 4, 6
+    # print(distance(xa,ya,xb,yb))
     
+    # ------------------------------------------
+
+    # Example 18 
+
+    # print(premier(10)) # retournera False
+    # print(premier(7)) # retournera True
     ...
     
