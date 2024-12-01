@@ -230,6 +230,10 @@ def distance(xa, ya, xb, yb) :
 
     return distance
 
+# -----------------------------------------------------------------------------
+
+# Exercice 18
+
 
 if __name__ == "__main__":
     # Example 1
