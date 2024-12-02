@@ -222,7 +222,7 @@ def diff_list(liste1, liste2) :
 
 # -----------------------------------------------------------------------------
 
-# Exercice 17 
+    # Exercice 17 
 
 def distance(xa, ya, xb, yb) :
     #  d = √(x2−x1)2+(y2−y1)2. formule distance
@@ -232,7 +232,7 @@ def distance(xa, ya, xb, yb) :
 
 # -----------------------------------------------------------------------------
 
-# Exercice 19
+    # Exercice 19
 
 import math
 
@@ -246,7 +246,7 @@ def premier(n):
 
 # -----------------------------------------------------------------------------
 
-# Exercice 20
+    # Exercice 20
 
 def npremier(n) :
     compteur = 0
@@ -260,13 +260,27 @@ def npremier(n) :
 
 # -----------------------------------------------------------------------------
 
-# Exercice 21
+    # Exercice 21
 
 def swap(a, b):
     print("Avant l'échange : a =", a, "b =", b)
     a, b = b, a
     print("Après l'échange : a =", a, "b =", b)
     return a, b
+
+# -----------------------------------------------------------------------------
+
+    # Exercice 22
+
+def checkindex(t, n) :
+    for element in range(len(t)) : 
+        if t[element] == n :
+            return element
+    return None
+    
+
+# -----------------------------------------------------------------------------
+
 
 
 
@@ -394,6 +408,11 @@ if __name__ == "__main__":
 
     # ------------------------------------------
 
-    
+    # Example 22 
+    # t = [12, 65, 23, 14, 85, 11, 8, 41, 9, 0, 55, 3]
+    # print(checkindex(t, 3))
+
+    # ------------------------------------------
+
     ...
     # end weekend
