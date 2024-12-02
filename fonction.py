@@ -4,7 +4,7 @@ from math import sqrt
 
 # --- Définition des fonctions ---
 
-# Exercice 1
+    # Exercice 1
 
 def somme(liste) :
     total = 0 
@@ -18,7 +18,7 @@ def somme(liste) :
     return total
 # -----------------------------------------------------------------------------
 
-# Exercice 2
+    # Exercice 2
 
 def pair(nbr) :
     if nbr % 2 == 0 :
@@ -29,7 +29,7 @@ def pair(nbr) :
 
 # -----------------------------------------------------------------------------
 
-# Exercice 3
+    # Exercice 3
 
 def maximum(n1, n2, n3) :
     max = 0
@@ -53,7 +53,7 @@ def maximum(n1, n2, n3) :
 
 # -----------------------------------------------------------------------------
 
-# Exercice 4
+    # Exercice 4
 
 def indexMax(serie):
     maxi = 0
@@ -67,7 +67,7 @@ def indexMax(serie):
 
 # -----------------------------------------------------------------------------
 
-# exercice 5
+    # exercice 5
 
 def nomMois(n) : 
     mois = [
@@ -91,7 +91,7 @@ def nomMois(n) :
 
 # -----------------------------------------------------------------------------
 
-# exercice 6 
+    # exercice 6 
 
 def inverse(chaine) : 
     chaine = chaine[::-1]    
@@ -99,7 +99,7 @@ def inverse(chaine) :
 
 # -----------------------------------------------------------------------------
 
-# exercice 7 
+    # exercice 7 
 
 def compteMots(phrase):
     compteur = 0 
@@ -110,7 +110,7 @@ def compteMots(phrase):
 
 # -----------------------------------------------------------------------------
 
-# exercice 8 
+    # exercice 8 
 
 def occurrence(chaine, car) : 
     compteur = 0
@@ -121,7 +121,7 @@ def occurrence(chaine, car) :
 
 # -----------------------------------------------------------------------------
 
-# exercice 9
+    # exercice 9
 
 def str2list(chaine) : 
     new_lst = []
@@ -131,7 +131,7 @@ def str2list(chaine) :
 
 # -----------------------------------------------------------------------------
 
-# exercice 10
+    # exercice 10
 
 def find_num(matrix, nbre) : 
     compteur = 0
@@ -142,7 +142,7 @@ def find_num(matrix, nbre) :
 
 # -----------------------------------------------------------------------------
 
-# exercice 11 
+    # exercice 11 
 
 def grands_mots(liste, nbre) : 
     new_lst = []
@@ -156,7 +156,7 @@ def grands_mots(liste, nbre) :
 
 # -----------------------------------------------------------------------------
 
-# exercice 12 
+    # exercice 12 
 
 def liste_paire(liste) :
     new_lst_pair = [] 
@@ -169,7 +169,7 @@ def liste_paire(liste) :
 
 # -----------------------------------------------------------------------------
 
-# exercice 13 
+    # exercice 13 
 
 def occ_liste(liste, car) : 
     new_lst = []
@@ -183,7 +183,7 @@ def occ_liste(liste, car) :
 
 # -----------------------------------------------------------------------------
 
-#  Exercice 14
+    #  Exercice 14
 
 def stat_chiffres(nbre) : 
     nbr_str = str(abs(nbre))
@@ -199,7 +199,7 @@ def stat_chiffres(nbre) :
 
 # -----------------------------------------------------------------------------
 
-# Exercice 15 
+    # Exercice 15 
 
 def fibonacci(n) : 
     liste = [0, 1]
@@ -211,7 +211,7 @@ def fibonacci(n) :
         
 # -----------------------------------------------------------------------------
 
-# Exercice 16
+    # Exercice 16
 
 def diff_list(liste1, liste2) : 
     lst = []
@@ -289,6 +289,23 @@ def check0to10(t, n):
             return True
     return False
 
+# -----------------------------------------------------------------------------
+
+    # Exercice 24
+
+def nchiffres(n) : 
+    n = abs(n)
+
+    n_str = str(n)
+
+    diff_chiffres = []
+
+    for chiffre in n_str :
+        if chiffre not in diff_chiffres :
+            diff_chiffres.append(chiffre)
+    return len(diff_chiffres)
+
+# -----------------------------------------------------------------------------
 
 
 if __name__ == "__main__":
@@ -425,5 +442,12 @@ if __name__ == "__main__":
     # t = [12, 65, 23, 14, 85, 11, 8, 41, 9, 0, 55, 3]
     # print(check0to10(t, 11)) # retournera True
     # print(check0to10(t, 3)) # retournera False
+
+    # ------------------------------------------
+
+    # Example 24
+    print(nchiffres(45)) # retournera 2
+    print(nchiffres(6457392)) # retournera 7
+    print(nchiffres(4555463))# retournera 4
     ...
-    # end weekend
+    
