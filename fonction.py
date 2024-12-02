@@ -258,6 +258,17 @@ def npremier(n) :
             return i
         i += 1
 
+# -----------------------------------------------------------------------------
+
+# Exercice 21
+
+def swap(a, b):
+    print("Avant l'échange : a =", a, "b =", b)
+    a, b = b, a
+    print("Après l'échange : a =", a, "b =", b)
+    return a, b
+
+
 
 if __name__ == "__main__":
     # Example 1
@@ -375,5 +386,14 @@ if __name__ == "__main__":
 
     # Example 20
     # print(npremier(7)) # retournera 17
+
+    # ------------------------------------------
+
+    # Example 21
+    # print(swap(1, 2))
+
+    # ------------------------------------------
+
+    
     ...
     # end weekend
