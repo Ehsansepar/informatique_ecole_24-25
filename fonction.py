@@ -281,6 +281,13 @@ def checkindex(t, n) :
 
 # -----------------------------------------------------------------------------
 
+    # Exercice 23
+
+def check0to10(t, n):
+    for i in range(n):
+        if 0 <= t[i] <= 10:
+            return True
+    return False
 
 
 
@@ -414,5 +421,9 @@ if __name__ == "__main__":
 
     # ------------------------------------------
 
+    # Example 23 
+    # t = [12, 65, 23, 14, 85, 11, 8, 41, 9, 0, 55, 3]
+    # print(check0to10(t, 11)) # retournera True
+    # print(check0to10(t, 3)) # retournera False
     ...
     # end weekend
