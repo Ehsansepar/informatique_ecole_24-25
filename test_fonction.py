@@ -1,15 +1,18 @@
-def nchiffres(n) : 
-    n = abs(n)
+def int_input(message) :
+    continuer = False
+    while continuer == False:
+        messages = input(message)
+        if messages.isdigit() == True :
+            messages = int(messages)
+            continuer = True
+            # return message
+    return messages
 
-    n_str = str(n)
-
-    new_lst = []
-
-    for chiffre in n_str :
-        if chiffre not in new_lst :
-            new_lst.append(chiffre)
-    return len(new_lst)
-
-print(nchiffres(45)) # retournera 2
-print(nchiffres(6457392)) # retournera 7
-print(nchiffres(4555463))# retournera 4
+def int_input1(message, minimum, maximum) :
+    ...
+    
+def int_input3(message) :
+    ...
+if __name__ == "__main__" : 
+    nombre = int_input("Entrez un nombre : ")
+    print(f"{nombre} = {type(nombre)}")
