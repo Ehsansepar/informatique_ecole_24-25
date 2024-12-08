@@ -9,15 +9,13 @@ def int_input(message) :
     return messages
 
 def int_input1(message, minimum, maximum):
-    while True:
-        # Demander à l'utilisateur d'entrer un nombre
-        reponse = input(message)
-        
-        # Vérifier si l'entrée contient uniquement des chiffres
-        if reponse.isdigit():
-            valeur = int(reponse)
-            # Vérifier si le nombre est dans la plage demandée
+    continuer = False
+    while continuer == False:
+        messages = input(message)
+        if messages.isdigit():
+            valeur = int(messages)
             if minimum <= valeur <= maximum:
+                continuer = True
                 return valeur
             else:
                 print(f"Le nombre doit être compris entre {minimum} et {maximum}")
@@ -33,3 +31,4 @@ if __name__ == "__main__" :
     # print(f"{nombre} = {type(nombre)}")
     print(int_input1("Entrez un nombre : ", 1, 10))
     # print(f"{nombre} = {type(nombre)}")
+# weekend work
