@@ -75,7 +75,6 @@ def input_float() :
         if not nombre.isdigit():
             print("Veuillez entrer un nombre valide.")
     return float(nombre)
-    ...
 
 def input_yesno(message, default=True) :
     yn = ""
@@ -92,14 +91,26 @@ def input_yesno(message, default=True) :
     # ['y', 'Y', 'o', 'O', ]
     # ['N', 'n', '0', '0']
     return default
-    
+
     ...
 
 if __name__ == "__main__" :
-    # nombre = input_int("Entrer un nombre : ")
-    # print(f"{nombre}")
 
-    print(int_input3("Entrez un nombre : ", None, 50))
-
+    nombre = input_int("Entrez un nombre: ")
+    print(f"{nombre = }, {type(nombre) = }")
+    # Entrez un nombre entier quelconque
+    nombre = input_float("Entrez un nombre: ")
+    print(f"{nombre = }, {type(nombre) = }")
+    # Entrez un nombre entier plus grand ou égal à 1
+    nombre = input_int3("Entrez un nombre: ", 1)
+    print(f"{nombre = }, {type(nombre) = }")
+    # Entrez un nombre entier compris entre 1 et 20 inclus
+    nombre = input_int1("Entrez un nombre: ", 1, 20)
+    print(f"{nombre = }, {type(nombre) = }")
+    # Entrez un nombre entier plus petit ou égal à 20
+    nombre = input_int3("Entrez un nombre: ", None, 20)
+    print(f"{nombre = }, {type(nombre) = }")
+    nombre = input("Entrtez un nombre: ")
+    nombre = int(nombre)
     ...
     
