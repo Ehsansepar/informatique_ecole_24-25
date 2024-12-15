@@ -99,6 +99,8 @@ def input_yesno(message, default=True) :
 
     ...
 
+
+# --- Corps principal ---
 if __name__ == "__main__" :
 
     nombre = input_int("Entrez un nombre: ")
