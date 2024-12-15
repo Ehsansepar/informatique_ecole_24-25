@@ -2,6 +2,9 @@
 
 # --- Importation des modules python ---
 
+
+
+# --- Définition des fonctions ---
 def int_input(message) :
     continuer = False
     while continuer == False:
