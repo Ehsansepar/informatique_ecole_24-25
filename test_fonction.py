@@ -1,5 +1,7 @@
 # Ehsan Separ 5TB Gr1
 
+# --- Importation des modules python ---
+
 def int_input(message) :
     continuer = False
     while continuer == False:
