@@ -1,0 +1,1 @@
+SELECT * FROM clientswde ORDER BY cp DESC;
